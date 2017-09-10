@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.github.ricardosbarbosa.quizapp.QuizActivityFragment"
+        tools:showIn="@layout/activity_quiz"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_margin="@dimen/quiz_element_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/question_1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:layout_margin="@dimen/quiz_element_margin"
+            android:id="@+id/edittext_question1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_margin="@dimen/quiz_element_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/question_2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_margin="@dimen/quiz_element_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/check_cupcake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cupcake" />
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/check_donut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/donut" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/check_brigadeiro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/brigadeiro" />
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/check_chocolate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chocolate" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/check_icecream"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ice_cream_sandwich" />
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/check_paçoca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pacoca" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_margin="@dimen/quiz_element_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/question_3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <RadioGroup
+            android:layout_margin="@dimen/quiz_element_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/radio_bugroid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bugdroid"/>
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/radio_eve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eve"/>
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/radio_astroboy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/astro_boy"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_margin="@dimen/quiz_element_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/question_4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <RadioGroup
+            android:layout_margin="@dimen/quiz_element_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatRadioButton
+
+                android:id="@+id/radio_2006"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_2006"/>
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/radio_2007"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_2007"/>
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/radio_2008"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_2008"/>
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/radio_2009"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_2009"/>
+        </RadioGroup>
+    </LinearLayout>
+</ScrollView>
